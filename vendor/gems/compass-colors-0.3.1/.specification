@@ -1,0 +1,105 @@
+--- !ruby/object:Gem::Specification 
+name: compass-colors
+version: !ruby/object:Gem::Version 
+  hash: 17
+  prerelease: 
+  segments: 
+  - 0
+  - 3
+  - 1
+  version: 0.3.1
+platform: ruby
+authors: 
+- Chris Eppstein
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-11-19 00:00:00 +05:30
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: compass
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 49
+        segments: 
+        - 0
+        - 8
+        - 7
+        version: 0.8.7
+  type: :runtime
+  version_requirements: *id001
+description: Sass Extensions and color theme templates to make working with colors easier and more maintainable.
+email: chris@eppsteins.net
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.markdown
+files: 
+- README.markdown
+- Rakefile
+- VERSION.yml
+- example/config.rb
+- example/split_compliment_example.html
+- example/src/_split_compliment_theme.sass
+- example/src/screen.sass
+- lib/compass-colors.rb
+- lib/compass-colors/compass_extension.rb
+- lib/compass-colors/hsl.rb
+- lib/compass-colors/sass_extensions.rb
+- spec/approximate_color_matching.rb
+- spec/sass_extensions_spec.rb
+- templates/analogous/_theme.sass
+- templates/analogous/manifest.rb
+- templates/basic/_theme.sass
+- templates/basic/manifest.rb
+- templates/complementary/_theme.sass
+- templates/complementary/manifest.rb
+- templates/split_complement/_theme.sass
+- templates/split_complement/manifest.rb
+- templates/triadic/_theme.sass
+- templates/triadic/manifest.rb
+has_rdoc: true
+homepage: http://compass-style.org
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 3
+summary: Color Support for Compass & Sass
+test_files: 
+- spec/approximate_color_matching.rb
+- spec/sass_extensions_spec.rb

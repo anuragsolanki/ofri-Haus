@@ -1,0 +1,84 @@
+--- !ruby/object:Gem::Specification 
+name: differ
+version: !ruby/object:Gem::Version 
+  hash: 25
+  prerelease: 
+  segments: 
+  - 0
+  - 1
+  - 1
+  version: 0.1.1
+platform: ruby
+authors: 
+- Pieter Vande Bruggen
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-03-29 00:00:00 +05:30
+default_executable: 
+dependencies: []
+
+description: 
+email: pvande@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.rdoc
+files: 
+- README.rdoc
+- VERSION.yml
+- lib/differ/change.rb
+- lib/differ/diff.rb
+- lib/differ/format/ascii.rb
+- lib/differ/format/color.rb
+- lib/differ/format/html.rb
+- lib/differ/string.rb
+- lib/differ.rb
+- spec/differ/change_spec.rb
+- spec/differ/diff_spec.rb
+- spec/differ/format/ascii_spec.rb
+- spec/differ/format/color_spec.rb
+- spec/differ/format/html_spec.rb
+- spec/differ/string_spec.rb
+- spec/differ_spec.rb
+- spec/spec_helper.rb
+has_rdoc: true
+homepage: http://github.com/pvande/differ
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --inline-source
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 2
+summary: A simple gem for generating string diffs
+test_files: []
+

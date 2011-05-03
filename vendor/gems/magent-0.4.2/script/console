@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# File: script/console
+irb = RUBY_PLATFORM =~ /(:?mswin|mingw)/ ? 'irb.bat' : 'irb'
+
+libs =  " -r irb/completion"
+#libs << " -r #{File.dirname(__FILE__) + '/../lib/console_lib/init.rb'}"
+libs <<  " -r #{File.dirname(__FILE__) + '/../lib/magent.rb'}"
+puts "Loading magent gem"
+exec "#{irb} #{libs} --simple-prompt"

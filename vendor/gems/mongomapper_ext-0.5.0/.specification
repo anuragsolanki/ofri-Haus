@@ -1,0 +1,207 @@
+--- !ruby/object:Gem::Specification 
+name: mongomapper_ext
+version: !ruby/object:Gem::Version 
+  hash: 11
+  prerelease: 
+  segments: 
+  - 0
+  - 5
+  - 0
+  version: 0.5.0
+platform: ruby
+authors: 
+- David A. Cuadrado
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-09-28 00:00:00 +05:30
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: mongo_mapper
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        hash: 27
+        segments: 
+        - 0
+        - 8
+        version: "0.8"
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: uuidtools
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 15
+        segments: 
+        - 2
+        - 0
+        - 0
+        version: 2.0.0
+  type: :runtime
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: shoulda
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 35
+        segments: 
+        - 2
+        - 10
+        - 2
+        version: 2.10.2
+  type: :development
+  version_requirements: *id003
+- !ruby/object:Gem::Dependency 
+  name: jnunemaker-matchy
+  prerelease: false
+  requirement: &id004 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 15
+        segments: 
+        - 0
+        - 4
+        - 0
+        version: 0.4.0
+  type: :development
+  version_requirements: *id004
+- !ruby/object:Gem::Dependency 
+  name: mocha
+  prerelease: false
+  requirement: &id005 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 51
+        segments: 
+        - 0
+        - 9
+        - 4
+        version: 0.9.4
+  type: :development
+  version_requirements: *id005
+description: MongoMapper extensions
+email: krawek@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README.rdoc
+- TODO
+files: 
+- .document
+- .gitignore
+- LICENSE
+- README.rdoc
+- Rakefile
+- VERSION
+- examples/filter.rb
+- examples/helper.rb
+- examples/i18n.rb
+- examples/slugizer.rb
+- examples/storage.rb
+- examples/tags.rb
+- examples/types.rb
+- examples/update.rb
+- lib/mongomapper_ext.rb
+- lib/mongomapper_ext/file.rb
+- lib/mongomapper_ext/file_list.rb
+- lib/mongomapper_ext/file_server.rb
+- lib/mongomapper_ext/filter.rb
+- lib/mongomapper_ext/js/filter.js
+- lib/mongomapper_ext/js/find_tags.js
+- lib/mongomapper_ext/js/tag_cloud.js
+- lib/mongomapper_ext/paginator.rb
+- lib/mongomapper_ext/slugizer.rb
+- lib/mongomapper_ext/storage.rb
+- lib/mongomapper_ext/tags.rb
+- lib/mongomapper_ext/types/open_struct.rb
+- lib/mongomapper_ext/types/timestamp.rb
+- lib/mongomapper_ext/types/translation.rb
+- lib/mongomapper_ext/update.rb
+- mongomapper_ext.gemspec
+- test/helper.rb
+- test/models.rb
+- test/support/custom_matchers.rb
+- test/test_filter.rb
+- test/test_slugizer.rb
+- test/test_storage.rb
+- test/test_tags.rb
+- test/test_update.rb
+- test/types/test_open_struct.rb
+- test/types/test_set.rb
+- test/types/test_timestamp.rb
+- TODO
+has_rdoc: true
+homepage: http://github.com/dcu/mongomapper_ext
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 3
+summary: MongoMapper extensions
+test_files: 
+- test/test_slugizer.rb
+- test/test_filter.rb
+- test/test_tags.rb
+- test/test_storage.rb
+- test/test_update.rb
+- test/support/custom_matchers.rb
+- test/models.rb
+- test/helper.rb
+- test/types/test_open_struct.rb
+- test/types/test_timestamp.rb
+- test/types/test_set.rb
+- examples/types.rb
+- examples/filter.rb
+- examples/update.rb
+- examples/tags.rb
+- examples/storage.rb
+- examples/helper.rb
+- examples/i18n.rb
+- examples/slugizer.rb

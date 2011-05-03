@@ -1,0 +1,156 @@
+--- !ruby/object:Gem::Specification 
+name: magent
+version: !ruby/object:Gem::Version 
+  hash: 11
+  prerelease: 
+  segments: 
+  - 0
+  - 4
+  - 2
+  version: 0.4.2
+platform: ruby
+authors: 
+- David Cuadrado
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-09-06 00:00:00 +05:30
+default_executable: magent
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: mongo
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 27
+        segments: 
+        - 0
+        - 1
+        - 0
+        version: 0.1.0
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: uuidtools
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 15
+        segments: 
+        - 2
+        - 0
+        - 0
+        version: 2.0.0
+  type: :runtime
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: rubyforge
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 2
+        - 0
+        - 4
+        version: 2.0.4
+  type: :development
+  version_requirements: *id003
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  prerelease: false
+  requirement: &id004 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 19
+        segments: 
+        - 2
+        - 6
+        - 2
+        version: 2.6.2
+  type: :development
+  version_requirements: *id004
+description: Simple job queue system based on mongodb
+email: 
+- krawek@gmail.com
+executables: 
+- magent
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- Manifest.txt
+- PostInstall.txt
+files: 
+- History.txt
+- Manifest.txt
+- PostInstall.txt
+- README.rdoc
+- Rakefile
+- bin/magent
+- examples/comm/run.rb
+- examples/comm/worker.rb
+- examples/error/error.rb
+- examples/simple/bot.rb
+- examples/stats/stats.rb
+- lib/magent.rb
+- lib/magent/actor.rb
+- lib/magent/channel.rb
+- lib/magent/generic_channel.rb
+- lib/magent/processor.rb
+- lib/magent/push.rb
+- lib/magent/utils.rb
+- magent.gemspec
+- script/console
+- test/test_helper.rb
+- test/test_magent.rb
+has_rdoc: true
+homepage: http://github.com/dcu/magent
+licenses: []
+
+post_install_message: ""
+rdoc_options: 
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: magent
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 3
+summary: Simple job queue system based on mongodb
+test_files: 
+- test/test_helper.rb
+- test/test_magent.rb

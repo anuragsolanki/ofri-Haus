@@ -1,0 +1,103 @@
+--- !ruby/object:Gem::Specification 
+name: whatlanguage
+version: !ruby/object:Gem::Version 
+  hash: 23
+  prerelease: 
+  segments: 
+  - 1
+  - 0
+  - 0
+  version: 1.0.0
+platform: ruby
+authors: 
+- Peter Cooper
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2008-08-22 00:00:00 +05:30
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 11
+        segments: 
+        - 1
+        - 7
+        - 0
+        version: 1.7.0
+  type: :development
+  version_requirements: *id001
+description: "== FEATURES/PROBLEMS:  * Only does French, English and Spanish out of the box. Very easy to train new languages though. * It can be made far more efficient at the comparison stage, but all in good time..! It still beats literal dictionary approaches. * No filter selection yet, you get 'em all loaded. * Tests are reasonably light.  == SYNOPSIS:  Full Example require 'whatlanguage'  texts = [] texts << %q{Deux autres personnes ont \xC3\xA9t\xC3\xA9 arr\xC3\xAAt\xC3\xA9es durant la nuit} texts << %q{The links between the attempted car bombings in Glasgow and London are becoming clearer} texts << %q{En estado de m\xC3\xA1xima alertaen su nivel de cr\xC3\xADtico} texts << %q{Returns the object in enum with the maximum value.} texts << %q{Propose des donn\xC3\xA9es au sujet de la langue espagnole.} texts << %q{La palabra \"mezquita\" se usa en espa\xC3\xB1ol para referirse a todo tipo de edificios dedicados.}  texts.each { |text| puts \"#{text[0..18]}... is in #{text.language.to_s.capitalize}\" }  Initialize WhatLanguage with all filters wl = WhatLanguage.new(:all)"
+email: whatlanguage@peterc.org
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- Manifest.txt
+- README.txt
+files: 
+- History.txt
+- Manifest.txt
+- README.txt
+- Rakefile
+- build_filter.rb
+- example.rb
+- lang/dutch.lang
+- lang/farsi.lang
+- lang/german.lang
+- lang/pinyin.lang
+- lang/russian.lang
+- lang/english.lang
+- lang/portuguese.lang
+- lang/french.lang
+- lang/spanish.lang
+- lib/bitfield.rb
+- lib/bloominsimple.rb
+- lib/whatlanguage.rb
+- test/test_whatlanguage.rb
+has_rdoc: true
+homepage: http://rubyforge.org/projects/whatlanguage/
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --main
+- README.txt
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: whatlanguage
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 2
+summary: Fast, quick, textual language detection
+test_files: 
+- test/test_whatlanguage.rb

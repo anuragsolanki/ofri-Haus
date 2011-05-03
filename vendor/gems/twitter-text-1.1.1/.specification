@@ -1,0 +1,105 @@
+--- !ruby/object:Gem::Specification 
+name: twitter-text
+version: !ruby/object:Gem::Version 
+  hash: 17
+  prerelease: 
+  segments: 
+  - 1
+  - 1
+  - 1
+  version: 1.1.1
+platform: ruby
+authors: 
+- Matt Sanford
+- Patrick Ewing
+- Ben Cherry
+- Britt Selvitelle
+autorequire: ""
+bindir: bin
+cert_chain: []
+
+date: 2010-04-28 00:00:00 +05:30
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: actionpack
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id001
+description: A gem that provides text handling for Twitter
+email: 
+- matt@twitter.com
+- patrick.henry.ewing@gmail.com
+- bcherry@gmail.com
+- bs@brittspace.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- LICENSE
+- README.rdoc
+- Rakefile
+- TODO
+- lib/autolink.rb
+- lib/extractor.rb
+- lib/hithighlighter.rb
+- lib/regex.rb
+- lib/twitter-text.rb
+- lib/unicode.rb
+- lib/validation.rb
+- spec/autolinking_spec.rb
+- spec/extractor_spec.rb
+- spec/hithighlighter_spec.rb
+- spec/regex_spec.rb
+- spec/spec_helper.rb
+- spec/test_urls.rb
+- spec/unicode_spec.rb
+- spec/validation_spec.rb
+has_rdoc: true
+homepage: http://twitter.com
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.4.2
+signing_key: 
+specification_version: 3
+summary: Twitter text handling library
+test_files: []
+
